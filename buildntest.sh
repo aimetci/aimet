@@ -182,8 +182,8 @@ fi
 
 # either use code linaro docker image or build it from scratch
 if [ -n "$USE_LINARO" ]; then
-    echo -e "Using linaro docker image: $docker_image_name \n"
     docker_image_name=$linaro_docker_image_name
+    echo -e "Using linaro docker image: $docker_image_name \n"
 else
     echo -e "Building docker image${loading_symbol} \n"
     DOCKER_BUILD_CMD="docker build -t ${docker_image_name} -f ${docker_file} ."
