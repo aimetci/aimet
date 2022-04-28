@@ -82,7 +82,7 @@ usage() {
 }
 
 
-while getopts "o:abce:im:npghsuvy:" opt;
+while getopts "o:abce:ilm:npghsuvy:" opt;
    do
       case $opt in
          a)
